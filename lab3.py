@@ -123,6 +123,7 @@ Q = round(numpy.dot(numpy.transpose(Y - XX.dot(aa)), (Y - XX.dot(aa)))[0][0], 10
 Qr = round(numpy.dot(numpy.transpose(XX.dot(aa)), (XX.dot(aa)))[0][0], 10)
 F = (Qr/(len(dataset.columns)))/(Q/(len(dataset[0].values) - 5))
 Fcr = 2
+print("test")
 if F > Fcr:
     print('\nГіпотеза H0 відхилена')
 else:
